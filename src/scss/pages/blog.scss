@@ -1,0 +1,22 @@
+/*
+|--------------------------------------------------
+| Blog - Index Page
+|--------------------------------------------------
+*/
+
+.blog {
+    //
+
+    #pagination {
+    }
+}
+
+ol.posts-listing {
+    // list-style:
+    list-style: none;
+    // border: 1px solid red;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: var(--spacer);
+}

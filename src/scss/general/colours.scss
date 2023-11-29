@@ -1,0 +1,62 @@
+// Variable / Custom Properties
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --white-transparent: rgba(255, 255, 255, 0.2);
+
+  --red: red;
+  --blue: #2d77d0;
+  --green: #1db954;
+}
+
+// Grayscale
+$black-10: darken(#fff, 10%);
+$black-20: darken(#fff, 20%);
+$black-30: darken(#fff, 30%);
+$black-40: darken(#fff, 40%);
+$black-50: darken(#fff, 50%);
+$black-60: darken(#fff, 60%);
+$black-70: darken(#fff, 70%);
+$black-80: darken(#fff, 80%);
+$black-90: darken(#fff, 90%);
+
+// Brand colors
+$brand-primary: #428bca;
+$brand-success: #5cb85c;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+$brand-info: #5bc0de;
+
+// Base colours for starter theme
+$green: $brand-primary;
+$green-opaque: rgba($brand-primary, 0.9);
+$beige: #ebe1e0;
+$white: #fff;
+$grey-dark: #4d4d4d;
+
+$colour-brand: #00486d;
+$colour-accent: #0e9990;
+$colour-grey: #4d4d4d;
+
+// Scaffolding
+$body-background: #fff;
+$text-color: $black-50;
+
+// Forms
+$input-color-placeholder: lighten($text-color, 25%);
+
+// Links
+$link-color: $brand-primary;
+$link-color-hover: darken($link-color, 15%);
+
+// Grid
+$grid-columns: 12;
+$grid-column-padding: 30px;
+$grid-float-breakpoint: 768px;
+
+$colour-brand: #00486d;
+$colour-accent: #0e9990;
+$colour-grey: #404041;
+
+$colour-lightgrey: #f2f2f2;

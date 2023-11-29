@@ -1,0 +1,50 @@
+/*
+|--------------------------------------------------
+| Full Width Bar with CTA
+|--------------------------------------------------
+*/
+
+.full_width_cta_bar {
+  max-width: unset !important;
+  margin-bottom: 0 !important;
+  align-self: flex-start;
+
+  background-color: $green;
+  background: rgba(0, 0, 0, 0.2);
+
+  color: $grey-dark;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Mobile First
+  margin-bottom: var(--spacer-2);
+  @media only screen and (min-width: 800px) {
+    // bigger than 800px;
+    margin-bottom: var(--spacer-3);
+  }
+
+  a {
+    padding: var(--spacer-2); // Make hitbox bigger
+
+    span {
+      // For underline on hover
+
+      height: 0px;
+      border-bottom: 1px solid; // Inherits colour automatically
+      display: block;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: transform 0.7s ease, opacity 0.3s ease; // Slowly fades out
+    }
+
+    &:hover {
+      span {
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 0.3s ease, opacity 0.2s ease; // Quickly Appears
+      }
+    }
+  }
+}

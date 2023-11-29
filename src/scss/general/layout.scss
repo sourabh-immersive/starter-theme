@@ -1,0 +1,162 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*
+|--------------------------------------------------
+| Pages with little content are always at least 100vh high
+|--------------------------------------------------
+*/
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    footer {
+        margin-top: auto;
+    }
+}
+
+/*
+|--------------------------------------------------
+| Container
+|--------------------------------------------------
+*/
+.row {
+    max-width: none;
+    width: 100%;
+    // border: 20px solid pink;
+}
+
+.no-pad {
+    padding: 0px;
+}
+
+.max-width {
+    max-width: 1080px;
+    display: block;
+    margin: 0 auto;
+
+    &.pad-content {
+        padding: 80px 0px 60px;
+        overflow: hidden;
+    }
+}
+
+.clear {
+    clear: both;
+}
+.title-container {
+    display: block;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.the-content {
+}
+/*
+|--------------------------------------------------
+| Navigation
+|--------------------------------------------------
+*/
+nav {
+    ul {
+        list-style-type: none;
+        li {
+        }
+    }
+}
+/*
+|--------------------------------------------------
+| Page Content
+|--------------------------------------------------
+*/
+.the-content {
+    a {
+        text-decoration: underline;
+    }
+
+    h1 {
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    h2 {
+        font-size: 48px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        line-height: 56px;
+    }
+}
+/*
+|--------------------------------------------------
+| Swiper Defaults 
+|--------------------------------------------------
+*/
+
+/*
+|--------------------------------------------------
+| Testimonials
+|--------------------------------------------------
+*/
+
+/*
+|--------------------------------------------------
+| Sign Up
+|--------------------------------------------------
+*/
+#SignUp {
+    h2 {
+        color: #fff;
+    }
+}
+.signup-container {
+    p {
+        &.privacy {
+            text-align: center;
+            margin: 20px 0 40px;
+            label {
+                color: #fff;
+                font-size: 17px;
+                a {
+                    color: #fff;
+                    @include transition(all 0.3s);
+                    text-decoration: underline;
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+|--------------------------------------------------
+| CTA Block
+|--------------------------------------------------
+*/
+.cta {
+}
+/*
+|--------------------------------------------------
+| Phone Specific
+|--------------------------------------------------
+*/
+@include for-phone-only {
+    .no-mob {
+        display: none;
+    }
+    .no-mob-pad {
+        padding: 0px;
+    }
+}

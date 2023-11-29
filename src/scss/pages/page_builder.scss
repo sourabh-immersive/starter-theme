@@ -1,0 +1,17 @@
+/*
+|--------------------------------------------------
+| Page Builder Page
+|--------------------------------------------------
+*/
+
+.page_builder {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacer-1);
+    padding: var(--spacer-1);
+
+    > * {
+        min-height: 50px;
+        // background-color: peachpuff;
+    }
+}

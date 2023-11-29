@@ -1,0 +1,19 @@
+:root {
+    // Mobile first
+    --spacer: 20px;
+    --spacer-half: calc(var(--spacer) * 0.5);
+    --spacer-third: calc(var(--spacer) * 0.33);
+    --spacer-two-thirds: calc(var(--spacer) * 0.66);
+
+    --spacer-1: calc(var(--spacer) * 1);
+    --spacer-1-and-half: calc(var(--spacer) * 1.5);
+    --spacer-2: calc(var(--spacer) * 2);
+    --spacer-3: calc(var(--spacer) * 3);
+    --spacer-4: calc(var(--spacer) * 4);
+    --spacer-5: calc(var(--spacer) * 5);
+
+    @media only screen and (min-width: 600px) {
+        // bigger than 600px
+        --spacer: 30px;
+    }
+}

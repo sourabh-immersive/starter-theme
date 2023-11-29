@@ -1,0 +1,148 @@
+{
+    "key": "group_62d7bfa8ec5a2",
+    "title": "Image Focus Point (single)",
+    "fields": [
+        {
+            "key": "field_62d7c06584f35",
+            "label": "Choose Image Focus Point?",
+            "name": "choose_focus_point",
+            "type": "true_false",
+            "instructions": "Manually select where the main focus of the image is - usually a face or building",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_62d7c12dfe139",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62d7c06584f35",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This means that it won't get cropped off on various screen sizes.\r\n\r\nChoose the X\/Y coordinates of the focal point of the image above.\r\n\r\nDefault \/ Blank is 50% 50% (center center)",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_62d7c09a84f36",
+            "label": "",
+            "name": "coords",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62d7c06584f35",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "sub_fields": [
+                {
+                    "key": "field_62d7bfaeb11ed",
+                    "label": "X Value (horizontal)",
+                    "name": "x_value_horizontal",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 50,
+                    "min": "",
+                    "max": "",
+                    "step": "0.5",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_62d7bfdab11ee",
+                    "label": "Y Value (vertical)",
+                    "name": "y_value_vertical",
+                    "type": "range",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 50,
+                    "min": "",
+                    "max": "",
+                    "step": "0.5",
+                    "prepend": "",
+                    "append": "",
+                    "show_column": 0,
+                    "show_column_sortable": 0,
+                    "show_column_weight": 1000,
+                    "allow_quickedit": 0,
+                    "allow_bulkedit": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "449"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1658331801
+}

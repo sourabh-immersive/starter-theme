@@ -1,0 +1,47 @@
+/*
+|--------------------------------------------------
+|  Client Carousels
+|--------------------------------------------------
+*/
+
+.client_carousel {
+    min-height: 100px;
+    padding: 40px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .swiper-container {
+        // display: flex;
+        // flex-direction: column;
+        // gap: 20px;
+
+        .swiper-pagination {
+            // border: 20px solid green;
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        gap: 40px;
+
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        blockquote {
+            border-left: 0;
+            flex-grow: 1;
+            margin-bottom: 0;
+            background: wheat;
+
+            .author {
+                font-weight: bold;
+                text-align: right;
+            }
+        }
+    }
+}

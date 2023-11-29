@@ -1,0 +1,75 @@
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $colour-grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-stack;
+    margin-top: 0;
+    margin-bottom: var(--spacer-half);
+    line-height: 1.2;
+}
+
+a {
+    color: $colour-grey;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.the_content,
+.the-content {
+    // border: 2px solid green;
+
+    width: 100%;
+    max-width: var(--max-width);
+    margin-bottom: var(--spacer-3);
+    // padding: 0 var(--spacer-1);
+
+    // padding: 0 var(--spacer-1);
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        text-align: left;
+        margin-top: var(--spacer-2);
+        margin-bottom: var(--spacer-1);
+    }
+
+    ul {
+        margin-left: var(--spacer-half);
+        margin-bottom: 1rem;
+        // list-style-position: outside;
+        // line-height: 1.6;
+    }
+
+    blockquote {
+        margin-top: var(--spacer-1);
+        margin-bottom: var(--spacer-1);
+        padding: var(--spacer-1);
+        color: var(--black);
+
+        p {
+            color: inherit;
+
+            &:last-child {
+                // Remove margin from last p as we've padding
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+/*
+|--------------------------------------------------
+| Block (On the homepage) 
+| Used for Memberhip || House & Gardens
+|--------------------------------------------------
+*/
+
+.home .homepage_block {
+    color: unset;
+
+    .wrapper {
+        max-width: var(--max-width);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .text-content {
+            order: 0;
+            padding: var(--spacer-2) var(--spacer-1);
+            padding-bottom: calc(var(--spacer-4) * 2);
+        }
+
+        .image-wrapper {
+            order: 1;
+            padding: 0 var(--spacer-1);
+
+            margin-top: calc(var(--spacer-3) * -2);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                max-height: 70vh;
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            // bigger than 800px;
+            flex-direction: row;
+            gap: var(--spacer-2);
+            justify-content: space-between;
+            padding: var(--spacer-1);
+
+            .image-wrapper {
+                order: 2;
+                padding: 0;
+                margin-top: 0;
+                flex-grow: 0;
+                flex-basis: 40%;
+            }
+
+            .text-content {
+                padding: var(--spacer-2) 0;
+                flex-basis: 40%;
+                flex-grow: 1;
+                position: relative;
+            }
+        }
+
+        @media only screen and (min-width: 1000px) {
+            gap: var(--spacer-4);
+        }
+    }
+}

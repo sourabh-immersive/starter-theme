@@ -1,0 +1,23 @@
+/*
+|--------------------------------------------------
+|  Contact - Map Embed Block
+|--------------------------------------------------
+*/
+
+.map_embed {
+    max-width: var(--max-width);
+    width: 100%;
+
+    padding: 0 var(--spacer-1);
+    margin-bottom: var(--spacer-2);
+
+    .wrapper {
+        padding: var(--spacer-2);
+        background-color: $beige;
+        width: 100%;
+
+        iframe {
+            width: 100%;
+        }
+    }
+}

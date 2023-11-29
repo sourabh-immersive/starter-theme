@@ -1,0 +1,173 @@
+/*
+|--------------------------------------------------------------------------
+| Vars
+|--------------------------------------------------------------------------
+*/
+
+@import "node_modules/@wurren/bascss/bascss.scss";
+@import "node_modules/swiper/swiper.scss";
+@import "node_modules/swiper/components/pagination/pagination.scss";
+@import "node_modules/swiper/components/navigation/navigation.scss";
+
+/* ---- Mixins scss ---- */
+@mixin transition($trans) {
+  -webkit-transition: $trans;
+  -moz-transition: $trans;
+  -o-transition: $trans;
+  -ms-transition: $trans;
+  transition: $trans;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin cover-img($position, $repeat: no-repeat, $size: cover) {
+  background: {
+    position: center;
+    repeat: no-repeat;
+    size: $size;
+  }
+}
+@mixin psuedoAfter($content, $position) {
+  content: "";
+  position: absolute;
+}
+@mixin grayscale($filter) {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+@mixin grayscaleOff($filter) {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+@mixin fade-in($opacity, $delay) {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+@mixin for-phone-only {
+  @media only screen and (max-width: 639px) {
+    @content;
+  }
+}
+@mixin for-phone-ld {
+  @media only screen and (max-width: 46em) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin for-tab-land {
+  @media (max-width: 64.063em) {
+    @content;
+  }
+}
+@mixin for-laptop-sm {
+  @media only screen and (max-width: 1390px) {
+    @content;
+  }
+}
+@mixin for-laptop-bg {
+  @media only screen and (max-width: 1390px) {
+    @content;
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Libraries
+|--------------------------------------------------------------------------
+*/
+@import "libs/normalize.scss";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "libs/plugins.scss";
+@import "libs/wordpress.scss";
+
+/*
+|--------------------------------------------------------------------------
+| General - Global 
+|--------------------------------------------------------------------------
+*/
+
+@import "general/colours.scss";
+@import "general/fonts.scss";
+@import "general/type.scss";
+@import "general/layout.scss";
+@import "general/general.scss";
+@import "general/spacing.scss";
+@import "general/utilities.scss";
+
+/*
+|--------------------------------------------------------------------------
+| Components
+|--------------------------------------------------------------------------
+*/
+
+@import "components/test.scss";
+@import "components/hero.scss";
+@import "components/header.scss";
+@import "components/navigation.scss";
+@import "components/footer.scss";
+@import "components/buttons.scss";
+@import "components/forms.scss";
+@import "components/hamburger.scss";
+
+@import "components/header.scss";
+@import "components/navigation.scss";
+@import "components/footer.scss";
+@import "components/buttons.scss";
+@import "components/forms.scss";
+@import "components/form_block.scss";
+@import "components/hamburger.scss";
+@import "components/homepage_page_intro.scss";
+
+@import "components/homepage_block.scss";
+@import "components/membership_block.scss";
+@import "components/house_and_gardens_block.scss";
+@import "components/contact-info.scss";
+@import "components/post_card.scss";
+@import "components/contact-map_embed.scss";
+@import "components/socials.scss";
+
+/*
+|--------------------------------------------------------------------------
+| ACF Page Builder Blocks Compoonents
+|--------------------------------------------------------------------------
+*/
+
+@import "components/pb-image_text_cta.scss";
+@import "components/pb-links_with_background_images.scss";
+@import "components/pb-testimonials.scss";
+@import "components/pb-client_carousel.scss";
+@import "components/hero.scss";
+@import "components/pb-image_text_cta.scss";
+@import "components/pb-links_with_background_images.scss";
+@import "components/pb-testimonials.scss";
+@import "components/pb-page_intro.scss";
+@import "components/pb-image_gallery_slider.scss";
+@import "components/pb-timeline.scss";
+@import "components/pb-full_width_cta_bar.scss";
+@import "components/pb-nav_bar.scss";
+@import "components/pb-accordions.scss";
+@import "components/pb-default_text_area.scss";
+
+/*
+|--------------------------------------------------------------------------
+| App
+|--------------------------------------------------------------------------
+*/
+@import "pages/homepage.scss";
+@import "pages/blog.scss";
+@import "pages/page.scss";
+@import "pages/page_builder.scss";
+@import "pages/post.scss";
+@import "pages/404.scss";

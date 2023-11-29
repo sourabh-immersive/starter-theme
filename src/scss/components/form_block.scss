@@ -1,0 +1,31 @@
+/*
+|--------------------------------------------------
+| Form Embed 
+|--------------------------------------------------
+*/
+
+.form_block {
+    max-width: var(--max-width);
+    width: 100%;
+
+    margin: 0 auto;
+    margin-bottom: var(--spacer-2);
+
+    .wrapper {
+        padding: var(--spacer-2);
+        background-color: $beige;
+        width: 100%;
+    }
+
+    text-align: center;
+
+    #nf-field-4-container.button {
+        padding-bottom: 0 !important;
+    }
+
+    input.ninja-forms-field.button {
+        padding: unset;
+        color: $grey-dark !important;
+        padding: 0 !important;
+    }
+}

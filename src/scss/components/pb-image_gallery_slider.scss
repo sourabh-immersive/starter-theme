@@ -1,0 +1,50 @@
+/*
+|--------------------------------------------------
+| PB - Image Gallery Slider
+|--------------------------------------------------
+*/
+
+.image_gallery_slider {
+  margin-bottom: var(--spacer-3);
+
+  --swiper-theme-color: $grey-dark;
+  --max-height: 400px;
+
+  @media only screen and (min-width: 800px) {
+    //bigger than 800px
+    --max-height: 60vh;
+  }
+
+  .swiper-container {
+    // outline: 2px solid blue;
+
+    overflow: hidden;
+    max-height: var(--max-height);
+
+    .swiper-wrapper {
+      max-height: var(--max-height);
+
+      .swiper-slide {
+        // outline: 2px solid green;
+
+        max-height: var(--max-height);
+        width: auto;
+        height: 100%;
+
+        img {
+          height: 100%;
+          width: auto;
+          max-height: var(--max-height);
+        }
+      }
+    }
+
+    [class*="swiper-button"] {
+      // Previous & Next Buttons
+      border-radius: 100px;
+      border: 10px solid transparent;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}

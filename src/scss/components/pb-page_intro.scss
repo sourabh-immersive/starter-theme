@@ -1,0 +1,49 @@
+/*
+|--------------------------------------------------
+| Page Intro Block
+|--------------------------------------------------
+*/
+
+.pb-page_intro {
+  color: white; // Inherited by children
+
+  display: flex;
+  justify-content: flex-end;
+
+  // Mobile First
+  // margin-bottom: var(--spacer-2);
+
+  @media only screen and (min-width: 800px) {
+    // bigger than 800px;
+    // margin-bottom: var(--spacer-3);
+  }
+
+  .swiper-container {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+
+    .swiper-wrapper {
+      display: flex;
+
+      .swiper-slide {
+        min-width: 100%;
+
+        box-sizing: border-box !important; // Needed for padding below to work properly
+        padding: 40px;
+      }
+    }
+
+    .swiper-button-next {
+      @media only screen and (min-width: 800px) {
+        // bigger than 800px;
+        right: 5px;
+      }
+    }
+    .swiper-button-prev {
+      @media only screen and (min-width: 800px) {
+        // bigger than 800px;
+        left: 5px;
+      }
+    }
+  }
+}

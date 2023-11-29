@@ -1,0 +1,117 @@
+/*
+|--------------------------------------------------
+| Footer
+|--------------------------------------------------
+*/
+footer {
+    background: var(--black);
+
+    padding: 0 var(--spacer);
+
+    padding-top: var(--spacer-2);
+    padding-bottom: var(--spacer-2);
+
+    color: var(--white);
+    a {
+        color: inherit;
+    }
+
+    // For the nice leaf motif
+    position: relative;
+
+    .wrapper {
+        position: relative;
+        z-index: 2;
+        max-width: var(--max-width);
+        // margin: 0 auto;
+        margin: 0 auto;
+    }
+
+    .menu-main-nav-container {
+        ul.menu {
+            list-style: none;
+
+            columns: 2;
+            column-gap: var(--spacer-2);
+
+            text-align: center;
+            @media only screen and (min-width: 800px) {
+                //bigger than 800px
+                text-align: left;
+            }
+
+            li {
+                break-inside: avoid-column;
+            }
+        }
+    }
+
+    .column-right {
+        // border: 1px solid red;
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacer-1-and-half);
+
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (min-width: 800px) {
+            //bigger than 800px
+
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .logo-container {
+            margin-bottom: var(--spacer-1);
+            img {
+                max-width: 220px;
+            }
+        }
+    }
+
+    .bottom {
+        // border: 1px solid orange;
+
+        border-top: 1px solid var(--white);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: var(--spacer-two-thirds);
+    }
+
+    /*
+    //
+    // Overall Layout Only
+    //
+    */
+
+    .wrapper {
+        display: flex;
+        gap: var(--spacer-1-and-half);
+        flex-direction: column;
+
+        @media only screen and (min-width: 800px) {
+            //bigger than 800px
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    .menu-main-nav-container {
+        flex-basis: 50%;
+        flex-grow: 2;
+    }
+
+    .column-right {
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+
+    .bottom {
+        flex-basis: 100%;
+    }
+}

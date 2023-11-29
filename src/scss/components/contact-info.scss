@@ -1,0 +1,38 @@
+/*
+|--------------------------------------------------
+|  Contact Template - Contact Info
+|--------------------------------------------------
+*/
+
+.contact-info {
+    max-width: var(--max-width);
+    width: 100%;
+
+    padding: 0 var(--spacer-1);
+    margin-bottom: var(--spacer-2);
+
+    .contact-info-wrapper {
+        // Mobile first
+        display: flex;
+
+        flex-direction: column;
+        gap: var(--spacer-3);
+
+        @media only screen and (min-width: 800px) {
+            //bigger than 800px
+            flex-direction: row;
+        }
+
+        > div {
+            flex-basis: 50%;
+            text-align: center;
+        }
+    }
+
+    .contact-details {
+        ul {
+            list-style: none;
+            margin-bottom: var(--spacer-1);
+        }
+    }
+}

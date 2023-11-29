@@ -1,0 +1,94 @@
+/*
+|--------------------------------------------------
+| Forms
+|--------------------------------------------------
+*/
+
+.nf-form-fields-required {
+  padding: 20px 0;
+  font-size: 12px;
+  font-style: italic;
+  color: #999;
+}
+
+.nf-form-content input:not([type="button"]) {
+  background: #fff;
+}
+
+.ninja-forms-field.nf-element {
+  background-color: #fff;
+}
+
+.nf-field-element .ninja-forms-field.nf-element {
+  background-color: #fff;
+}
+
+.submit-wrap .ninja-forms-field[type="button"] {
+  background: $colour-accent;
+  color: #fff;
+}
+
+.nf-field-label {
+  //   border: 2px solid green;
+}
+
+.nf-field-label label {
+  //   display: none;
+}
+
+/*
+|--------------------------------------------------
+| Sign Up
+|--------------------------------------------------
+*/
+.input-field {
+  label {
+    // display: none;
+  }
+  input {
+    background: transparent;
+    border: none;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    box-shadow: none;
+    &::-webkit-input-placeholder {
+      /* Edge */
+      color: #fff;
+    }
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #fff;
+    }
+    ::placeholder {
+      color: #fff;
+    }
+  }
+  @include for-phone-ld {
+    width: 100%;
+  }
+}
+#SignUp {
+  input[type="checkbox"] {
+    position: relative;
+    margin: 0.4rem;
+  }
+  input[type="checkbox"]:before {
+    content: " ";
+    background: #000;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    transition: background 0.3s ease-in-out;
+  }
+  input[type="checkbox"]:checked:before {
+    background: #5d5d5d;
+  }
+  input[type="checkbox"]:checked:after {
+    content: none;
+  }
+}

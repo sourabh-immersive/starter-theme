@@ -1,0 +1,123 @@
+
+/*
+|--------------------------------------------------------------------------
+| Plugin CSS
+|--------------------------------------------------------------------------
+*/
+@-webkit-keyframes textShift {
+    0% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes textShift {
+    0% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes colorShift-teal{
+    0% {
+        color: white
+    }
+    100% {
+        color: #ccc;
+    }
+}
+
+@keyframes colorShift-teal {
+    0% {
+        color: white
+    }
+    100% {
+        color: #ccc;
+    }
+}
+
+.animate-in {
+    &.intro {
+        h1,p {
+            opacity:0;
+            transition: 1s ease;
+            -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+        }
+        &.in-view {
+            h1,p {
+                opacity:1;
+                -webkit-transform: translateY(0px);
+                transform: translateY(0px);      
+            }
+            p {
+                opacity: 0;
+                -webkit-animation: textShift 0.5s;
+                animation: textShift 0.5s;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+                -webkit-animation-delay: 0.5s;
+                animation-delay:0.5s;
+            }
+            
+        }        
+    }
+}

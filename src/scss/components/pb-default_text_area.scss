@@ -1,0 +1,21 @@
+/*
+|--------------------------------------------------
+| Default Text Area in Page Builder
+|--------------------------------------------------
+*/
+
+.text_area {
+    // border: 20px solid green;
+    // background: green !important;
+    // background: green !important;
+    // background: red !important;
+
+    width: 100%;
+
+    .wrapper {
+        // border: 1px solid red;
+        width: 100%;
+        max-width: 80ch;
+        margin: 0 auto;
+    }
+}
